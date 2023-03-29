@@ -1,0 +1,18 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>TextApp: A Simple Text Management Application</h1>
+  <p>Welcome to TextApp, a web-based application built using Flask, a lightweight Python web framework. This app allows users to manage texts by adding new texts, viewing existing texts, and navigating through a collection of texts within the web application.</p>
+
+  <h2>Functionalities</h2>
+  <ul>
+    <li><strong>Home page (Project Description):</strong> The home page displays a brief description of the project, explaining its purpose and basic functionalities.</li>
+    <li><strong>Add Text:</strong> This feature allows users to add new texts to the application. Users can input a name and the content of the text, then submit the information. The text data is then stored in a database for future reference.</li>
+    <li><strong>All Texts:</strong> This page lists all the texts that have been added to the app. Each text in the list is displayed as a link, which leads to the individual text page.</li>
+    <li><strong>Text Page:</strong> When a user clicks on a text link in the "All Texts" page, they are directed to a dedicated page for that specific text. The text page displays the name and the content of the text.</li>
+  </ul>
+
+  <p>The app uses Flask for handling HTTP requests and rendering HTML templates, while SQLite is used as the database for storing the texts. The front-end is designed using the Bootstrap CSS framework, which provides a clean and responsive user interface.</p>
+{% endblock %}
+

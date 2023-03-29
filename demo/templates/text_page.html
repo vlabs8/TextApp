@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{ text.name }}</h2>
+    <p>{{ text.content }}</p>
+    <a href="{{ url_for('all_texts') }}">Back to All Texts</a>
+{% endblock %}
+
+

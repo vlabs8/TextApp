@@ -1,0 +1,13 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>All the Texts Added List</h2>
+    <ul class="list-group">
+        {% for text in texts %}
+            <li class="list-group-item">
+                <a href="{{ url_for('text_page', text_id=text.id) }}">{{ text.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
